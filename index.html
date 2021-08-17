@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PW1 Aula 01</title>
+    <style>
+        body {
+          background-color: #CCC;
+        }
+
+        p {
+            font-size: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        img {
+            width: 50px;
+            float: right;
+            margin-left: 2px
+        }
+    </style>
+</head>
+<body>
+    <h1 style="margin-top: 5px; font-size: 20px; color: rgb(68, 27, 27)">Titulo</h1>
+    <img src="logo.png" alt="Logomarca UNCISAL">
+
+    <p title="Teste">
+        Novo parágrafo
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perferendis deserunt magnam! Omnis, quos iste quisquam accusamus obcaecati cupiditate officiis quia dignissimos dicta recusandae ea molestiae ipsum deserunt quod blanditiis?</p>
+
+    <input type="text" name="nome" id="nome">
+    <button id="botao">Exibir Saudação!</button>
+
+    <script>
+        var botao = document.getElementById('botao');
+        botao.addEventListener('click', function(event) {
+            var input = document.getElementById('nome');
+            alert("Seja bem vindo " + input.value);
+        })
+    </script>
+</body>
+</html>
