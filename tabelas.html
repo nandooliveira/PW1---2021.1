@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        /* thead { border: 1px solid red }
+        tbody { border: 1px solid blue }
+        tfoot { border: 1px solid green } */
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 10px;
+        }
+
+        thead, th {
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tabela</h1>
+
+    <table>
+        <colgroup>
+            <col span="2" >
+            <col>
+            <col>
+            <col style="background-color: rgb(244, 164, 164);" >
+        </colgroup>
+        <tr> <!-- tr -> Table Row -->
+            <th>Alimentos</th> <!-- th -> Table Header -->
+            <th>Quantidade</th>
+            <th>Preço</th>
+            <th>Preço</th>
+            <th class="bgazul">Preço</th>
+        </tr>
+        <tr> <!-- Table Row -->
+            <td>Carne</td> <!-- td -> Table Data -->
+            <td>4,5 kg</td>
+            <td>400 R$</td>
+            <td>400 R$</td>
+            <td>400 R$</td>
+        </tr>
+        <tr> <!-- Table Row -->
+            <td>Leite</td>
+            <td>6,0 L</td>
+            <td>50 R$</td>
+            <td>50 R$</td>
+            <td rowspan="2">50 R$</td>
+        </tr>
+        <tr> <!-- Table Row -->
+            <td>Feijão</td>
+            <td>2,0 kg</td>
+            <td>800 R$</td>
+            <td>800 R$</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td colspan="3">Items da Cesta Básica</td>
+                <td>800 R$</td>
+                <td>800 R$</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br><br>
+
+    <table border="1">
+        <tr> <!-- tr -> Table Row -->
+            <th>Alimentos</th> <!-- th -> Table Header -->
+            <th>Quantidade</th>
+            <th>Preço</th>
+        </tr>
+        <tr> <!-- Table Row -->
+            <td>Carne</td> <!-- td -> Table Data -->
+            <td>4,5 kg</td>
+            <td>400 R$</td>
+        </tr>
+        <tr> <!-- Table Row -->
+            <td>Leite</td>
+            <td>6,0 L</td>
+            <td>50 R$</td>
+        </tr>
+        <tr> <!-- Table Row -->
+            <td>Feijão</td>
+            <td>2,0 kg</td>
+            <td>800 R$</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <!-- Caption -->
+
+    <table border="1">
+        <caption>Items da Cesta Básica</caption>
+        <tr> <!-- tr -> Table Row -->
+            <th>Alimentos</th> <!-- th -> Table Header -->
+            <th>Quantidade</th>
+            <th>Preço</th>
+        </tr>
+        <tr> <!-- Table Row -->
+            <td>Carne</td> <!-- td -> Table Data -->
+            <td>4,5 kg</td>
+            <td>400 R$</td>
+        </tr>
+        <tr> <!-- Table Row -->
+            <td>Leite</td>
+            <td>6,0 L</td>
+            <td>50 R$</td>
+        </tr>
+        <tr> <!-- Table Row -->
+            <td>Feijão</td>
+            <td>2,0 kg</td>
+            <td>800 R$</td>
+        </tr>
+    </table>
+    <br><br>
+    <!-- Grouping Parts -->
+
+    <table border="1">
+        <thead>
+            <tr> <!-- tr -> Table Row -->
+                <th>Alimentos</th> <!-- th -> Table Header -->
+                <th>Quantidade</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> <!-- Table Row -->
+                <td>Carne</td> <!-- td -> Table Data -->
+                <td>4,5 kg</td>
+                <td>400 R$</td>
+            </tr>
+            <tr> <!-- Table Row -->
+                <td>Leite</td>
+                <td>6,0 L</td>
+                <td>50 R$</td>
+            </tr>
+            <tr> <!-- Table Row -->
+                <td>Feijão</td>
+                <td>2,0 kg</td>
+                <td>800 R$</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Items da Cesta Básica</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+
+<body>
+    <h1>Listas</h1>
+    <!-- Listas Ordenadas -->
+    <ol style="border: 1px solid red; columns: 3;">
+        <!-- CSS Inline -->
+        <li>
+            Primeiro <Item class=""></Item>
+            <!--
+                type: {1, A, a, I, i}
+                reversed: Indica que a lista deve ser exibida na ordem invertida
+                start: Número indicando a posição inicial da lista
+             -->
+            <ol type="A" start="10">
+                <li>I1</li>
+                <li>I2</li>
+                <li>I3</li>
+            </ol>
+        </li>
+        <li>Segundo Item</li>
+        <li>Terceiro Item</li>
+        <li>Terceiro Item</li>
+        <li>Terceiro Item</li>
+        <li>Terceiro Item</li>
+    </ol>
+
+    <!-- Listas não ordenadas -->
+    <ul style="border: 1px solid blue;">
+        <li>
+            <a href="https://www.uncisal.edu.br" target="_blank">
+                <img src="images/logo.png" width="20"> Primeiro Item não Ordenado
+            </a>
+
+            <ul>
+                <li>I1</li>
+                <li>I2</li>
+                <li>I3</li>
+            </ul>
+        </li>
+        <li>Segundo Item não Ordenado</li>
+        <li>Terceiro Item não Ordenado</li>
+    </ul>
+
+    <!-- Listas de Descrição -->
+    <dl>
+        <!-- description list -->
+        <dt>Programação WEB 1</dt> <!-- Termo que será descrito -->
+        <dd>
+            <!-- Descrição -->
+            - Programação Web Frontend
+            <ul>
+                <li>Test</li>
+            </ul>
+        </dd>
+
+        <dt>Programação WEB 2</dt>
+        <dd>- Programação Web Backend</dd>
+    </dl>
+</body>
+
+</html>
