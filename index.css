@@ -30,6 +30,10 @@ p.destaque {
     font-style: italic;
 }
 
+h1, p {
+    border-right: 2px solid red;
+}
+
 /* Seleciona elementos p estejam dentro de elmentos que tenha a classe destaque */
 .destaque p {
     text-decoration: underline;
@@ -37,6 +41,25 @@ p.destaque {
 
 div {
     border: 1px solid purple;
+}
+
+/* seleciona todos os elementos `p` que são filhos diretos de uma `div` */
+div > p {
+    background-color: rgba(255, 255, 100, 0.8);
+}
+
+/* Seleciona todos os elementos small que tem como parent direto um elemento h1 */
+h1 + small {
+    color: darkgrey;
+    font-weight: bold;
+}
+
+[title] {
+    border-bottom: 2px dashed lightseagreen;
+}
+
+[title="Texto Explicativo"] {
+    border-bottom: 2px dashed red;
 }
 
 * {
