@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="especificidade.css">
+    <title>Especificidade CSS</title>
+
+    <!--
+        Elemento tem peso 1 (ex.: h1)
+        Classe tem pesso 10 (ex.: .verde)
+        ID tem peso     100 (ex.: #test)
+     -->
+
+    <style>
+        h1 { /* 1 */
+            color: red
+        }
+
+        h1.verde { /* 11 */
+            color: rgb(73, 226, 73);
+        }
+
+        .verde { /* 10 */
+            color: rgb(10, 44, 10);
+        }
+
+        p.destaque { /* 11 */
+            color: red;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .azul.destaque { /* 20 */
+            color: blue
+        }
+
+        #paragrafo { /* 100 */
+            color: grey
+        }
+
+        #cascata { /* 100 */
+            color: brown
+        }
+    </style>
+</head>
+<body>
+    <h1 class="verde">Teste de Especificidade</h1>
+
+    <h1>Teste 2</h1>
+
+
+    <p id="paragrafo" class="destaque azul">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, provident architecto. Magnam, nobis, praesentium expedita laudantium voluptatibus natus consequuntur sapiente sed quas fugit dolor quidem voluptate ipsa quam, provident neque.</p>
+
+    <p id="cascata" style="color:rgb(30, 48, 210)">Paragrafo</p>
+
+    <a href="filmes/1">
+        <img src="logo.png" alt="Uncisal">
+    </a>
+</body>
+</html>
