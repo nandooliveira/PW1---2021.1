@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilização</title>
+    <style>
+        body {
+            /* background-image: url("images/background-site.jpg"); */
+            background-image: url("images/logo.png");
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-attachment: fixed;  /*ou scroll*/
+
+            /* Shorthand */
+            /* background: url("images/logo.png") no-repeat right top fixed; */
+        }
+
+        h1 {
+            color: rgb(177, 21, 21);
+            /* color: rgb(91, 23, 168); */
+            /* color: rgba(79, 72, 87, 0.7); */
+            /* color: #235009; */
+            /* color: hsl(76, 61%, 17%) */
+            background-color: hsl(75, 8%, 9%);
+            /* opacity: 0.7; */
+        }
+
+        div {
+            /*
+            border-color: red;
+            border-width: 2px;
+            border-style: solid;
+            */
+
+            border: 2px solid rgb(48, 47, 47);
+            border-radius: 30px 10px;
+            padding: 20px;
+            background-color: #7a7777;
+            color: rgb(32, 32, 32);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: bold;
+
+            border-left-width: 10px;
+            border-right-width: 10px;
+            margin: 20px;
+            margin-right: 200px;
+            padding: 20px;
+
+            height: 150px;
+            width: 250px;
+
+            /* box-sizing: content-box; */
+            /* width + padding + border = largura final */
+            /* height + padding + border = altura final */
+
+            box-sizing: border-box;
+            /* width = largura final */
+            /* height = altura final */
+
+            overflow: auto;
+
+            /* margin: 20px 40px 60px 80px; */
+            /* border-image: url("images/logo.png");
+            border-image-repeat: repeat;
+            border-width: 20px; */
+        }
+
+        #texto_formatado {
+            border: 1px solid lightgray;
+            height: 200px;
+            color:rgb(30, 77, 148);
+            text-align: center;
+            text-decoration: underline;
+            text-indent: 30px;
+            letter-spacing: 3px;
+            line-height: 25px;
+            word-spacing: 5px;
+            /* white-space: nowrap; */
+            text-shadow: 1px 1px red;
+        }
+
+        #texto_formatado input {
+            text-transform: uppercase;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Estilização</h1>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, expedita est id iure consequatur, voluptatem tenetur in, delectus veritatis inventore animi non quia natus repellendus officia quaerat dignissimos dolorum illo.</p>
+    </div>
+
+    <p id="texto_formatado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis obcaecati est magni, ab impedit culpa, molestias quisquam voluptatibus voluptatum doloremque eos mollitia laudantium doloribus nisi exercitationem nobis iste, libero sapiente!
+        <br><br>
+        <input type="submit" value="Enviar Dados">
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente explicabo ullam aliquam porro vero vitae itaque
+        dignissimos dicta veniam magnam dolorem inventore asperiores, similique quia nobis quae ipsam vel fuga.
+        Fugiat praesentium accusamus nulla ducimus ipsa veniam quos a blanditiis reiciendis expedita, placeat natus
+        velit nostrum ex at officia? Dignissimos inventore quidem facere deleniti totam perferendis blanditiis quaerat
+        illo eos?
+        Quisquam eligendi deserunt eius aut repellendus, neque eaque iusto, culpa qui pariatur error at id et!
+        Repellendus alias voluptates itaque fugiat sit, voluptatibus at deleniti cupiditate temporibus repellat quisquam
+        excepturi.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente explicabo ullam aliquam porro vero vitae itaque
+        dignissimos dicta veniam magnam dolorem inventore asperiores, similique quia nobis quae ipsam vel fuga.
+        Fugiat praesentium accusamus nulla ducimus ipsa veniam quos a blanditiis reiciendis expedita, placeat natus
+        velit nostrum ex at officia? Dignissimos inventore quidem facere deleniti totam perferendis blanditiis quaerat
+        illo eos?
+        Quisquam eligendi deserunt eius aut repellendus, neque eaque iusto, culpa qui pariatur error at id et!
+        Repellendus alias voluptates itaque fugiat sit, voluptatibus at deleniti cupiditate temporibus repellat quisquam
+        excepturi.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente explicabo ullam aliquam porro vero vitae itaque
+        dignissimos dicta veniam magnam dolorem inventore asperiores, similique quia nobis quae ipsam vel fuga.
+        Fugiat praesentium accusamus nulla ducimus ipsa veniam quos a blanditiis reiciendis expedita, placeat natus
+        velit nostrum ex at officia? Dignissimos inventore quidem facere deleniti totam perferendis blanditiis quaerat
+        illo eos?
+        Quisquam eligendi deserunt eius aut repellendus, neque eaque iusto, culpa qui pariatur error at id et!
+        Repellendus alias voluptates itaque fugiat sit, voluptatibus at deleniti cupiditate temporibus repellat quisquam
+        excepturi.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente explicabo ullam aliquam porro vero vitae itaque
+        dignissimos dicta veniam magnam dolorem inventore asperiores, similique quia nobis quae ipsam vel fuga.
+        Fugiat praesentium accusamus nulla ducimus ipsa veniam quos a blanditiis reiciendis expedita, placeat natus
+        velit nostrum ex at officia? Dignissimos inventore quidem facere deleniti totam perferendis blanditiis quaerat
+        illo eos?
+        Quisquam eligendi deserunt eius aut repellendus, neque eaque iusto, culpa qui pariatur error at id et!
+        Repellendus alias voluptates itaque fugiat sit, voluptatibus at deleniti cupiditate temporibus repellat quisquam
+        excepturi.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente explicabo ullam aliquam porro vero vitae itaque
+        dignissimos dicta veniam magnam dolorem inventore asperiores, similique quia nobis quae ipsam vel fuga.
+        Fugiat praesentium accusamus nulla ducimus ipsa veniam quos a blanditiis reiciendis expedita, placeat natus
+        velit nostrum ex at officia? Dignissimos inventore quidem facere deleniti totam perferendis blanditiis quaerat
+        illo eos?
+        Quisquam eligendi deserunt eius aut repellendus, neque eaque iusto, culpa qui pariatur error at id et!
+        Repellendus alias voluptates itaque fugiat sit, voluptatibus at deleniti cupiditate temporibus repellat quisquam
+        excepturi.</p>
+</body>
+
+</html>
