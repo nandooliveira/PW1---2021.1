@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Variáveis</p>
+
+    <script>
+        var test = "test";
+        function saudacao() {
+            console.log(test);
+
+            // hoisting
+            if(true) {
+                numero = 10;
+                let test2 = "test2";
+                console.log(test2);
+            }
+        }
+
+        saudacao();
+
+        const letra = 'A';
+        const minhaConstante = 'B';
+        const array = [1, 2, 3, 4, 5];
+
+        let a = 5, b = 3, c = 10;
+    </script>
+</body>
+</html>

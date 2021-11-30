@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="test">Teste </p>
+
+    <input type="text" onkeydown="exibirNome(this);">
+
+    <button onclick="alert('Clicado')">Clica aqui Jovem!</button>
+
+    <script>
+        let test = document.querySelector("#test");
+        test.addEventListener('click', function(event) {
+            console.log("Clicado");
+        });
+
+        function exibirNome(input) {
+            console.log(input.value);
+        }
+    </script>
+</body>
+</html>

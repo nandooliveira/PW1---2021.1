@@ -12,7 +12,7 @@ function calcularImc(event) {
     var imc = peso / (altura * altura);
 
     var classificacao = "";
-    
+
     if(imc < 18.5) {
         classificacao = "Abaixo do Peso";
     } else if (imc > 18.5 && imc < 25) {

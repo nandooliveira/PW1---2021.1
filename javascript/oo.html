@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Testes</h1>
+
+    <script>
+        let user = {
+            nome: 'Fernando',
+            email: 'fernando.oliveira@hey.com',
+            saudacao: function() {
+                console.log("Seja bem vindo!");
+            }
+        }
+
+        console.log(user);
+        console.log(typeof user);
+        user.saudacao();
+
+        class User {
+            constructor(nome, email) {
+                this.nome = nome;
+                this.email = email;
+            }
+
+            informacoesDeContato() {
+                return `Nome: ${this.nome.toUpperCase()} Email: ${this.email}`;
+            }
+        }
+
+        let u = new User("Tonho", "tonho@da.lua");
+        // debugger
+        console.log(u);
+        console.log(u.informacoesDeContato());
+
+        let u2 = new User("Zé", "ze@de.nanan");
+        console.log(u2.informacoesDeContato());
+
+
+        function soma(a, b) {
+
+        }
+
+        const add = function(a, b) {
+
+        }
+
+        const soma2 = (a, b) => {
+            return a + b;
+        }
+
+        const soma3 = (a, b) => a + b;
+
+        const message = () => "Message";
+
+        const message2 = nome => `Opa ${nome}`;
+    </script>
+</body>
+</html>
